@@ -22,8 +22,7 @@ PostgreSQL Setup:
 Install PostgreSQL: Ensure you have PostgreSQL installed on your machine. If not, download and install it from the official PostgreSQL website.
 Database Setup: Create a PostgreSQL database named salary_data.
 Table Setup: Execute the following SQL command to create a table named salary_data that matches the format of the provided dataset:
-sql
-Copy code
+
 CREATE TABLE salary_data (
     Age NUMERIC,
     Gender VARCHAR(10),
