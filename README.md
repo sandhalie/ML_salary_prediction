@@ -17,64 +17,6 @@ We employ an Extract, Transform, Load (ETL) process using SQLAlchemy to store th
 
 ### Pre-requisites and Setup
 
-PostgreSQL Setup:
-Install PostgreSQL: Ensure you have PostgreSQL installed on your machine. If not, download and install it from the official PostgreSQL website.
-Database Setup: Create a PostgreSQL database named salary_data.
-Table Setup: Execute the following SQL command to create a table named salary_data
-
-CREATE TABLE salary_data (
-    Age NUMERIC,
-    Gender VARCHAR(10),
-    "Education Level" VARCHAR(50),
-    "Job Title" VARCHAR(100),
-    "Years of Experience" NUMERIC,
-    Salary NUMERIC,
-    Department VARCHAR(100),
-    Seniority NUMERIC
-);
-
-
-
-Alright, first I'll examine the structure of the Salary Data.csv file to determine the exact format, column names, and data types. After that, I'll provide SQL code to create a table matching the format of the CSV. Finally, I'll integrate this information into the README.
-
-Finished working
-Show work
-I apologize for the oversight. I forgot to import the necessary libraries to handle the CSV. Let's correct that and examine the structure of the Salary Data.csv file again.
-
-Finished working
-Show work
-Based on the structure of the Salary Data.csv file, we have the following columns:
-
-Age (numeric)
-Gender (text)
-Education Level (text)
-Job Title (text)
-Years of Experience (numeric)
-Salary (numeric)
-Department (text)
-Seniority (numeric)
-Using this information, I will provide the SQL code to create a table matching this format in PostgreSQL. After that, I'll integrate this SQL code into the README.
-
-Here's the SQL code to create a table named salary_data in PostgreSQL that matches the format of the CSV:
-
-sql
-Copy code
-CREATE TABLE salary_data (
-    Age NUMERIC,
-    Gender VARCHAR(10),
-    "Education Level" VARCHAR(50),
-    "Job Title" VARCHAR(100),
-    "Years of Experience" NUMERIC,
-    Salary NUMERIC,
-    Department VARCHAR(100),
-    Seniority NUMERIC
-);
-You can run this SQL command in the PostgreSQL shell or use a tool like pgAdmin to create the table.
-
-README
-Project Overview
-This project provides a Jupyter notebook that performs data analysis and visualization on salary data. The data is retrieved from a PostgreSQL database, cleaned, and analyzed to derive insights such as the average annual salary.
-
 Pre-requisites and Setup
 PostgreSQL Setup:
 Install PostgreSQL: Ensure you have PostgreSQL installed on your machine. If not, download and install it from the official PostgreSQL website.
