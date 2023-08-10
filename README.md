@@ -67,7 +67,7 @@ The hyperparameters of the models are fine-tuned using GridSearchCV to improve t
 The Multi Linear Regression model achieves an R2 score of 0.9027 with a Mean Squared Error of 233355401.45166123. In contrast, the Random Forest Regressor model achieves an R2 score of 0.8463 with a Mean Squared Error of 368548719.23786736.
 
 It was decided that the Multi Linear Regression model was more accurate due to the higher R2 score.
-
+[Results](https://public.tableau.com/app/profile/basudeb.ghosh/viz/Project_SalaryPrediction/Story1?publish=yes)
 ### Data Visualization
 
 We will create a Tableau dashboard to visualize the relationships between demographic factors, years of experience, educational qualifications, and predicted salaries. The dashboard will provide insights into the factors that contribute to salary predictions and help users explore the data interactively. [Salary Prediction Dashboard](https://public.tableau.com/app/profile/basudeb.ghosh/viz/Project4_update/Story1)
