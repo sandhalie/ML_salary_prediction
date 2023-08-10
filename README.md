@@ -15,6 +15,102 @@ Our data foundation is meticulously crafted, procuring a dataset that encapsulat
 
 We employ an Extract, Transform, Load (ETL) process using SQLAlchemy to store this data within a PostgreSQL database
 
+### Pre-requisites and Setup
+
+PostgreSQL Setup:
+Install PostgreSQL: Ensure you have PostgreSQL installed on your machine. If not, download and install it from the official PostgreSQL website.
+Database Setup: Create a PostgreSQL database named salary_data.
+Table Setup: Execute the following SQL command to create a table named salary_data
+
+CREATE TABLE salary_data (
+    Age NUMERIC,
+    Gender VARCHAR(10),
+    "Education Level" VARCHAR(50),
+    "Job Title" VARCHAR(100),
+    "Years of Experience" NUMERIC,
+    Salary NUMERIC,
+    Department VARCHAR(100),
+    Seniority NUMERIC
+);
+
+
+
+Alright, first I'll examine the structure of the Salary Data.csv file to determine the exact format, column names, and data types. After that, I'll provide SQL code to create a table matching the format of the CSV. Finally, I'll integrate this information into the README.
+
+Finished working
+Show work
+I apologize for the oversight. I forgot to import the necessary libraries to handle the CSV. Let's correct that and examine the structure of the Salary Data.csv file again.
+
+Finished working
+Show work
+Based on the structure of the Salary Data.csv file, we have the following columns:
+
+Age (numeric)
+Gender (text)
+Education Level (text)
+Job Title (text)
+Years of Experience (numeric)
+Salary (numeric)
+Department (text)
+Seniority (numeric)
+Using this information, I will provide the SQL code to create a table matching this format in PostgreSQL. After that, I'll integrate this SQL code into the README.
+
+Here's the SQL code to create a table named salary_data in PostgreSQL that matches the format of the CSV:
+
+sql
+Copy code
+CREATE TABLE salary_data (
+    Age NUMERIC,
+    Gender VARCHAR(10),
+    "Education Level" VARCHAR(50),
+    "Job Title" VARCHAR(100),
+    "Years of Experience" NUMERIC,
+    Salary NUMERIC,
+    Department VARCHAR(100),
+    Seniority NUMERIC
+);
+You can run this SQL command in the PostgreSQL shell or use a tool like pgAdmin to create the table.
+
+README
+Project Overview
+This project provides a Jupyter notebook that performs data analysis and visualization on salary data. The data is retrieved from a PostgreSQL database, cleaned, and analyzed to derive insights such as the average annual salary.
+
+Pre-requisites and Setup
+PostgreSQL Setup:
+Install PostgreSQL: Ensure you have PostgreSQL installed on your machine. If not, download and install it from the official PostgreSQL website.
+Database Setup: Create a PostgreSQL database named salary_data.
+Table Setup: Execute the following SQL command to create a table named salary_data that matches the format of the provided dataset:
+sql
+Copy code
+CREATE TABLE salary_data (
+    Age NUMERIC,
+    Gender VARCHAR(10),
+    "Education Level" VARCHAR(50),
+    "Job Title" VARCHAR(100),
+    "Years of Experience" NUMERIC,
+    Salary NUMERIC,
+    Department VARCHAR(100),
+    Seniority NUMERIC
+);
+
+Data Import: Import the data from Salary Data.csv into the salary_data table.
+Connection Parameters: Ensure that the PostgreSQL database connection parameters (like username, password, and port) match your local setup. For this README, we assume the username and password are both set to "postgres" and the port is "5432". Adjust the connection string in the notebook if your setup is different.
+
+Python and Jupyter Notebook Setup:
+Python: Ensure you have Python 3.6 or newer installed. If not, download and install it from the official Python website.
+Jupyter Notebook: If you don't have Jupyter Notebook installed, you can install it using pip install jupyter
+
+Python Libraries: Install the required Python libraries using pip install pandas numpy plotly seaborn matplotlib scikit-learn sqlalchemy
+
+Running the Notebook:
+
+Navigate to the directory containing the Main.ipynb notebook.
+Launch Jupyter Notebook by running the command:jupyter notebook
+
+Once Jupyter starts, click on Main.ipynb to open the notebook.
+Run the cells in sequence from top to bottom to execute the analysis and visualization tasks.
+
+
 ### Model Selection
 
 We will select an appropriate machine learning algorithm from Scikit-learn to construct the salary prediction model, basing our decision on the dataset's characteristics and the prediction problem's nature.
@@ -41,7 +137,7 @@ An upcoming enhancement involves deploying the web application and machine learn
 
 ### Documentation
 
-Throughout the project, we will maintain clear and detailed documentation of the entire process. This documentation will include the steps taken for data preprocessing, the rationale behind model selection, details of model training and evaluation, creation of the Tableau dashboard, deployment process, and any challenges faced during the project. The complete project, including code, documentation, and relevant files, will be made available to the public via a GitHub repository.
+Throughout the project, we will maintain clear and detailed documentation of the entire process. This documentation will include the steps taken for data preprocessing, the rationale behind model selection, details of model training and evaluation, the creation of the Tableau dashboard, the deployment process, and any challenges faced during the project. The complete project, including code, documentation, and relevant files, will be made available to the public via a GitHub repository.
 
 The GitHub repository for this project can be found at:
 [ML Salary Prediction Repository](https://github.com/sandhalie/ML_salary_prediction)
